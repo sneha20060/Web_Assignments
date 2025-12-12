@@ -1,0 +1,223 @@
+/* ---------------------------
+   GENERAL PAGE SETTINGS
+---------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #efefef;
+}
+
+/* ---------------------------
+   TOP NAVIGATION
+---------------------------- */
+.nav {
+    width: 100%;
+    background: #2f3133;
+    padding: 15px 20px;
+    text-align: right;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #e7e7e7;
+}
+
+/* ---------------------------
+   MAIN RESUME LAYOUT
+---------------------------- */
+.resume-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* ---------------------------
+   LEFT PANEL
+---------------------------- */
+.left-section {
+    width: 28%;
+    background: #3a3d40;
+    color: white;
+    padding: 40px 30px;
+    border-right: 3px solid #dcdcdc;
+}
+
+.profile-pic img {
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.name {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+/* Contact Info */
+.contact-info {
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.contact-info p {
+    margin-bottom: 12px;
+    line-height: 20px;
+}
+
+.contact-info a {
+    color: #b6dcff;
+    word-wrap: break-word;
+}
+
+/* Section Titles */
+.section-title {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.left-section ul {
+    list-style: circle;
+    margin: 15px 0 20px 25px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+/* ---------------------------
+   RIGHT PANEL
+---------------------------- */
+.right-section {
+    width: 72%;
+    background: #ffffff;
+    padding: 40px 50px;
+}
+
+.right-section h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #bdbdbd;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.right-section p,
+.right-section li {
+    font-size: 16px;
+    color: #333;
+    line-height: 24px;
+}
+
+.right-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ---------------------------
+   EDUCATION BLOCKS
+---------------------------- */
+.edu-entry {
+    margin-top: 20px;
+    padding: 15px 10px 15px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.year-box {
+    background: #dcdcdc;
+    padding: 8px 15px;
+    height: fit-content;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ---------------------------
+   PROJECTS LIST
+---------------------------- */
+.right-section ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.right-section ul li {
+    margin-bottom: 15px;
+}
+
+/* ---------------------------
+   BIODATA PAGE
+---------------------------- */
+.biodata-container {
+    width: 60%;
+    background: white;
+    margin: 30px auto;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.biodata-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3a3d40;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.biodata-container h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #bdbdbd;
+    padding-bottom: 5px;
+}
+
+.biodata-container p,
+.biodata-container li {
+    font-size: 17px;
+    margin-top: 8px;
+    line-height: 26px;
+}
+
+/* ---------------------------
+   HIGHLIGHT EFFECT FOR jQuery
+---------------------------- */
+.highlight {
+    background: #ffe7a1 !important;
+}
+
+/* ---------------------------
+   RESPONSIVE DESIGN
+---------------------------- */
+@media (max-width: 900px) {
+    .resume-container {
+        flex-direction: column;
+    }
+    .left-section, .right-section {
+        width: 100%;
+    }
+
+    .biodata-container {
+        width: 90%;
+    }
+}
